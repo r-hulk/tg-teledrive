@@ -13,3 +13,4 @@ sessions/
 dump\.rdb
 *.log
 .cached/
+.env-render

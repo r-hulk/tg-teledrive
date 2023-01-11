@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = "postgres://telecloud_user:yO394niJS9rENtiLUxNBHsWLva25SbWD@dpg-ce85tk6n6mpksegr50kg-a.oregon-postgres.render.com/telecloud"
 }
 
 /// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.

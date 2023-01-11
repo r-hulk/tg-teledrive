@@ -17,5 +17,7 @@
     "web",
     "api"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "@typescript-eslint/typescript-estree": "^5.48.1"
+  }
 }

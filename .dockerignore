@@ -1,0 +1,110 @@
+# flyctl launch added from .gitignore
+**/node_modules
+**/.DS_Store
+**/.vscode
+**/dist
+**/build
+**/keys
+**/.env
+**/*.env
+**/.vercel
+**/lab
+**/sessions
+**/*.crt
+**/dump\.rdb
+**/*.log
+**/.cached
+**/.env-render
+
+# flyctl launch added from android/Teledrive-Expo/.gitignore
+android/Teledrive-Expo/**/node_modules
+android/Teledrive-Expo/**/.expo
+android/Teledrive-Expo/**/dist
+android/Teledrive-Expo/**/npm-debug.*
+android/Teledrive-Expo/**/*.jks
+android/Teledrive-Expo/**/*.p8
+android/Teledrive-Expo/**/*.p12
+android/Teledrive-Expo/**/*.key
+android/Teledrive-Expo/**/*.mobileprovision
+android/Teledrive-Expo/**/*.orig.*
+android/Teledrive-Expo/**/web-build
+
+# macOS
+android/Teledrive-Expo/**/.DS_Store
+
+# flyctl launch added from api/.gitignore
+api/**/node_modules
+# Keep environment variables out of version control
+api/**/.env
+api/**/.vercel
+
+# flyctl launch added from docs/.gitignore
+# Dependencies
+docs/node_modules
+
+# Production
+docs/build
+
+# Generated files
+docs/**/.docusaurus
+docs/**/.cache-loader
+
+# Misc
+docs/**/.DS_Store
+docs/**/.env.local
+docs/**/.env.development.local
+docs/**/.env.test.local
+docs/**/.env.production.local
+
+docs/**/npm-debug.log*
+docs/**/yarn-debug.log*
+docs/**/yarn-error.log*
+
+# flyctl launch added from electron/.gitignore
+electron/**/node_modules
+electron/**/release-builds
+electron/**/package-lock.json
+electron/**/.DS_Store
+electron/**/windowsinstaller
+
+# flyctl launch added from integrations/webeditor/.gitignore
+integrations/webeditor/**/node_modules
+integrations/webeditor/**/.expo
+integrations/webeditor/**/dist
+integrations/webeditor/**/npm-debug.*
+integrations/webeditor/**/*.jks
+integrations/webeditor/**/*.p8
+integrations/webeditor/**/*.p12
+integrations/webeditor/**/*.key
+integrations/webeditor/**/*.mobileprovision
+integrations/webeditor/**/*.orig.*
+integrations/webeditor/**/web-build
+
+# macOS
+integrations/webeditor/**/.DS_Store
+
+# flyctl launch added from web/.gitignore
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+web/node_modules
+web/.pnp
+web/**/.pnp.js
+
+# testing
+web/coverage
+
+# production
+web/build
+
+# misc
+web/**/.DS_Store
+web/**/.env.local
+web/**/.env.development.local
+web/**/.env.test.local
+web/**/.env.production.local
+
+web/**/npm-debug.log*
+web/**/yarn-debug.log*
+web/**/yarn-error.log*
+fly.toml
