@@ -9,7 +9,7 @@ const Startup: React.FC = () => {
   useEffect(() => {
     form.setFieldsValue({
       baseUrl: window.location.origin,
-      apiUrl: localStorage.getItem('API_URL') || process.env.REACT_APP_API_URL || window.location.origin
+      apiUrl: localStorage.getItem('API_URL') || process.env.REACT_APP_API_URL
     })
   }, [])
 
@@ -26,31 +26,42 @@ const Startup: React.FC = () => {
     return window.location.replace(baseUrl)
   }
 
-  return <Layout.Content className="container" style={{ minHeight: '87vh' }}>
-    <Row style={{ paddingTop: '100px' }}>
-      <Col xxl={{ span: 8, offset: 8 }} xl={{ span: 8, offset: 8 }} lg={{ span: 10, offset: 7 }} md={{ span: 14, offset: 5 }} span={22} offset={1}>
-        <Typography.Title level={2}>
-          Welcome!
-        </Typography.Title>
-        <Typography.Paragraph type="secondary" style={{ fontSize: '14px' }}>
-          We'll redirect you to your TeleDrive application.
-        </Typography.Paragraph>
-        <Form form={form} layout="vertical" onFinish={finish}>
-          <Form.Item label="Web URL" name="baseUrl">
-            <Input />
-          </Form.Item>
-          {/* <Form.Item label="Server URL" name="apiUrl">
+  return (
+    <Layout.Content className="container" style={{ minHeight: '87vh' }}>
+      <Row style={{ paddingTop: '100px' }}>
+        <Col
+          xxl={{ span: 8, offset: 8 }}
+          xl={{ span: 8, offset: 8 }}
+          lg={{ span: 10, offset: 7 }}
+          md={{ span: 14, offset: 5 }}
+          span={22}
+          offset={1}
+        >
+          <Typography.Title level={2}>Welcome!</Typography.Title>
+          <Typography.Paragraph type="secondary" style={{ fontSize: '14px' }}>
+            We'll redirect you to your TeleDrive application.
+          </Typography.Paragraph>
+          <Form form={form} layout="vertical" onFinish={finish}>
+            <Form.Item label="Web URL" name="baseUrl">
+              <Input />
+            </Form.Item>
+            {/* <Form.Item label="Server URL" name="apiUrl">
             <Input />
           </Form.Item> */}
-          <Form.Item>
-            <Button type="primary" htmlType="submit" icon={<RocketOutlined />}>
-              Start
-            </Button>
-          </Form.Item>
-        </Form>
-      </Col>
-    </Row>
-  </Layout.Content>
+            <Form.Item>
+              <Button
+                type="primary"
+                htmlType="submit"
+                icon={<RocketOutlined />}
+              >
+                Start
+              </Button>
+            </Form.Item>
+          </Form>
+        </Col>
+      </Row>
+    </Layout.Content>
+  )
 }
 
 export default Startup
