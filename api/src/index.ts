@@ -97,7 +97,7 @@ app.use((req: Request, res: Response) => {
   }
 })
 
-app.listen(process.env.PORT || 4000, () => console.log(`Running at :${process.env.PORT || 4000}...`))
+app.listen(process.env.PORT || 4000, () => console.log(`Running at : http://localhost:${process.env.PORT || 4000}...`))
 
 console.log(listEndpoints(app))
 
