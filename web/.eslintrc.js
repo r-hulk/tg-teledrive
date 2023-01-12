@@ -11,6 +11,7 @@ module.exports = {
     'eslint:recommended',
     // 'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react/jsx-runtime',
   ],
   rules: {
     '@typescript-eslint/naming-convention': [
@@ -90,6 +91,9 @@ module.exports = {
         'asyncArrow': 'always'
       }
     ],
-    '@typescript-eslint/no-var-requires': 'off'
+    '@typescript-eslint/no-var-requires': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+
   }
 }
